@@ -3,7 +3,28 @@ $(function () {
     cover();
     pagination(true);
     player();
+
+    window.onscroll = function () { scrollFunction() };
 });
+
+function scrollFunction() {    
+    let headers = document.getElementsByClassName("gh-head");
+    if (headers.length > 0) {
+        let header = headers[0];
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            if (window.innerWidth > 768) {
+                header.style.height = "60px";
+            }
+            header.style.borderBottom = "1px solid #e3e3e3";
+        } else {
+            if (window.innerWidth > 768) {
+                header.style.height = "100px";
+            }
+            header.style.borderBottom = "none";
+
+        }
+    }
+}
 
 function cover() {
     'use strict';

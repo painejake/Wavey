@@ -1,4 +1,4 @@
-# Wave
+# Wave Alt
 
 Wave is a [Ghost](https://github.com/TryGhost/Ghost) theme dedicated to podcasters. Share your voice and words with your audience.
 

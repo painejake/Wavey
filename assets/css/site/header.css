@@ -1,5 +1,9 @@
 .gh-head {
     font-weight: 500;
+    position: fixed;
+    width: 100%;
+    transition: 0.2s;
+    z-index: 1000;
 }
 
 /* .gh-head-btn.gh-btn {
